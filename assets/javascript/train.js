@@ -75,11 +75,11 @@
 		console.log(next);
 		
 
-$("#trainTable > tbody").append("<tr><td>"+ train + "</td><td>" + dest + "</td><td>" + freq + "</td><td>" + next + "</td><td>" + minAway + "</td></tr>");
+$("#trainTable").append("<tr><td>"+ train + "</td><td>" + dest + "</td><td>" + freq + "</td><td>" + next + "</td><td>" + minAway + "</td></tr>");
 
-},	function (errorObject){
-		console.log("The read failed" + errorObject.code);
-		setInterval (uhoh, 60000);
+// },	function (errorObject){
+// 		console.log("The read failed" + errorObject.code);
+// 		setInterval (uhoh, 60000);
 	
 });
 
